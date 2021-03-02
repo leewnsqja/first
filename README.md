@@ -13,15 +13,130 @@ yarn 1.22.10
 리엑트를 사용,리덕스를 통한 상태 관리
 ```
 # 폴더 구조
-
-![tree1](https://user-images.githubusercontent.com/79570486/109596034-c9eca600-7b58-11eb-81e6-5b29939513cd.PNG)
-
-![tree2](https://user-images.githubusercontent.com/79570486/109596076-de30a300-7b58-11eb-8b72-83e75bd9e792.PNG)
-
-![tree3](https://user-images.githubusercontent.com/79570486/109596083-e12b9380-7b58-11eb-9435-eaffa5645f98.PNG)
-
-![tree4](https://user-images.githubusercontent.com/79570486/109596085-e25cc080-7b58-11eb-9b26-8b67ca775a04.PNG)
-
+```
+blog
+│  
+├─blog-backend
+│  │  .env
+│  │  .eslintrc.json
+│  │  .prettierrc
+│  │  jsconfig.json
+│  │  
+│  └─src
+│      │  index.js
+│      │  main.js
+│      │  
+│      ├─api
+│      │  │  index.js
+│      │  │  
+│      │  ├─auth
+│      │  │      auth.ctrl.js
+│      │  │      index.js
+│      │  │      
+│      │  └─posts
+│      │          index.js
+│      │          posts.ctrl.js
+│      │          
+│      ├─lib
+│      │      checkLoggedIn.js
+│      │      jwtMiddleware.js
+│      │      
+│      └─models
+│              post.js
+│              user.js
+│              
+└─blog-frontend
+    │  .eslintcache
+    │  .gitignore
+    │  .prettierrc
+    │  jsconfig.json
+    │  yarn.lock
+    │  
+    └─src
+        │  App.css
+        │  App.js
+        │  App.test.js
+        │  index.css
+        │  index.js
+        │  logo.svg
+        │  reportWebVitals.js
+        │  setupTests.js
+        │  
+        ├─components
+        │  ├─auth
+        │  │      AuthForm.js
+        │  │      AuthTemplate.js
+        │  │      
+        │  ├─common
+        │  │      AskModal.js
+        │  │      Button.js
+        │  │      Header.js
+        │  │      Responsive.js
+        │  │      SubInfo.js
+        │  │      Tags.js
+        │  │      
+        │  ├─post
+        │  │      AskRemoveModal.js
+        │  │      PostActionButtons.js
+        │  │      PostViewer.js
+        │  │      
+        │  ├─posts
+        │  │      Pagination.js
+        │  │      PostList.js
+        │  │      
+        │  └─write
+        │          Editor.js
+        │          TagBox.js
+        │          WriteActionButtons.js
+        │          
+        ├─containers
+        │  ├─auth
+        │  │      LoginForm.js
+        │  │      RegisterForm.js
+        │  │      
+        │  ├─common
+        │  │      HeaderContainer.js
+        │  │      
+        │  ├─post
+        │  │      PostViewerContainer.js
+        │  │      
+        │  ├─posts
+        │  │      PaginationContainer.js
+        │  │      PostListContainer.js
+        │  │      
+        │  └─write
+        │          EditorContainer.js
+        │          TagBoxContainer.js
+        │          WriteActionButtonsContainer.js
+        │          
+        ├─lib
+        │  │  createRequestSaga.js
+        │  │  
+        │  ├─api
+        │  │      auth.js
+        │  │      client.js
+        │  │      posts.js
+        │  │      
+        │  └─styles
+        │          palette.js
+        │          
+        ├─modules
+        │      auth.js
+        │      index.js
+        │      loading.js
+        │      post.js
+        │      posts.js
+        │      user.js
+        │      write.js
+        │      
+        └─pages
+                LoginPages.js
+                PostListPage.js
+                PostPage.js
+                RegisterPage.js
+                WritePage.js
+                
+```
 
 # 프로젝트 실행 yarn start
 ```
