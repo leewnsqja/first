@@ -4,7 +4,7 @@ react: 17.0.1
 redux: 4.0.5 
 redux-saga: 1.1.3
 mongoDB: 4.4.3
-yran 1.22.10
+yarn 1.22.10
 ```
 # 프로젝트 설명
 ```
