@@ -1,6 +1,7 @@
 # 주요 개발 환경
 ```
 react: 17.0.1
+create-react-app: 4.0.1
 redux: 4.0.5 
 redux-saga: 1.1.3
 mongoDB: 4.4.3
